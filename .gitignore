@@ -1,0 +1,196 @@
+# =============================================================================
+# SecretR00M - .gitignore
+# =============================================================================
+
+# =============================================================================
+# SECURITY CRITICAL - Never commit these files
+# =============================================================================
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+relay/certs/
+
+# Environment files with secrets
+.env
+.env.*
+*.env
+.envrc
+
+# Secrets and credentials
+secrets/
+credentials/
+*.secret
+
+# =============================================================================
+# iOS / Xcode
+# =============================================================================
+
+# Build outputs
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode user-specific files
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserdata/
+*.xcuserdatad/
+
+# Xcode scheme management (contains user paths)
+*.xcscheme
+!*.xcscheme/
+xcschemes/xcschememanagement.plist
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# CocoaPods
+# Uncomment if you want to exclude Pods from repo
+# Pods/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/README.md
+
+# Code Injection
+iOSInjectionProject/
+
+# =============================================================================
+# Node.js / Relay Server
+# =============================================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+*.log
+
+# =============================================================================
+# macOS
+# =============================================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+.__*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# =============================================================================
+# IDE and Editor
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =============================================================================
+# Testing and Coverage
+# =============================================================================
+
+coverage/
+*.gcno
+*.gcda
+*.lcov
+.coverage
+htmlcov/
+
+# =============================================================================
+# Archives and Backups
+# =============================================================================
+
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.backup
+*.old
+
+# =============================================================================
+# Temporary Files
+# =============================================================================
+
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+
+# =============================================================================
+# Documentation Build
+# =============================================================================
+
+docs/_build/
+site/
+
+# =============================================================================
+# Project Specific
+# =============================================================================
+
+# Internal architecture docs (contain operational details)
+# Note: Create sanitized public versions instead
+# ARCHITECTURE.md
+# SECURITY_ARCHITECTURE.md
+
+# Local configuration overrides
+config.local.*
+*.local.json
+*.local.yaml
+Pods/

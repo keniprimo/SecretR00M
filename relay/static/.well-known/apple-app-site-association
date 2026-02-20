@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TEAMID.com.secretroom.app"
+        ],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Invite links for room joining"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAMID.com.secretroom.app"
+    ]
+  }
+}

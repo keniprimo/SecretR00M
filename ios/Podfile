@@ -1,0 +1,49 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'SecretR00M' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # TorManager - handles all Tor complexity including pluggable transports
+  pod 'TorManager', '~> 0.5.0'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+
+      # Disable eager linking to fix "can't link a dylib with itself" error
+      # This is needed for Tor framework which has naming conflicts with its XCFramework
+      if target.name == 'Tor' || target.name.start_with?('Tor')
+        config.build_settings['EAGER_LINKING'] = 'NO'
+        # Also disable mergeable libraries which can cause similar issues
+        config.build_settings['MERGED_BINARY_TYPE'] = 'none'
+        config.build_settings['MERGEABLE_LIBRARY'] = 'NO'
+      end
+    end
+  end
+
+  # Disable sandbox for script phases (required for Xcode 15+)
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+
+        # Apply eager linking fix to all generated projects as well
+        if target.name == 'Tor' || target.name.start_with?('Tor')
+          config.build_settings['EAGER_LINKING'] = 'NO'
+          config.build_settings['MERGED_BINARY_TYPE'] = 'none'
+          config.build_settings['MERGEABLE_LIBRARY'] = 'NO'
+        end
+      end
+    end
+  end
+
+  # Also disable in main project
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+  end
+end

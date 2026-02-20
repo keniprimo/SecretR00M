@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005743970B9A27EB86D3F0EF /* UIStateInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18210CD0BC92A5E9C0F38B /* UIStateInteractionTests.swift */; };
+		0CA9BC044EC2AFBA30CC11E8 /* NetworkSecurityValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B76B544DA496C4998030E /* NetworkSecurityValidator.swift */; };
+		100000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* AppDelegate.swift */; };
+		100000000000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* SceneDelegate.swift */; };
+		100000000000000000000003 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* SecureBytes.swift */; };
+		100000000000000000000004 /* KeyGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* KeyGeneration.swift */; };
+		100000000000000000000005 /* KeyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* KeyExchange.swift */; };
+		100000000000000000000006 /* MessageCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* MessageCrypto.swift */; };
+		100000000000000000000007 /* NonceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* NonceTracker.swift */; };
+		100000000000000000000008 /* Handshake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* Handshake.swift */; };
+		100000000000000000000009 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* WebSocketManager.swift */; };
+		10000000000000000000000A /* MessageTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000A /* MessageTransport.swift */; };
+		10000000000000000000000B /* RoomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* RoomState.swift */; };
+		10000000000000000000000C /* RoomSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* RoomSession.swift */; };
+		10000000000000000000000D /* SecurityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* SecurityMonitor.swift */; };
+		10000000000000000000000E /* HighSecurityMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* HighSecurityMode.swift */; };
+		10000000000000000000000F /* DeviceIntegrityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* DeviceIntegrityChecker.swift */; };
+		100000000000000000000010 /* PrivacyOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* PrivacyOverlay.swift */; };
+		100000000000000000000011 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* MessageCell.swift */; };
+		100000000000000000000012 /* QuickExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* QuickExitButton.swift */; };
+		100000000000000000000013 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* RoomViewController.swift */; };
+		100000000000000000000014 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* HomeViewController.swift */; };
+		100000000000000000000015 /* HostRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* HostRoomViewController.swift */; };
+		100000000000000000000016 /* TorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000017 /* TorManager.swift */; };
+		100000000000000000000018 /* WebSocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000019 /* WebSocketProtocol.swift */; };
+		100000000000000000000019 /* TorStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001A /* TorStatusView.swift */; };
+		10000000000000000000001B /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001B /* DeepLinkHandler.swift */; };
+		10000000000000000000001C /* InviteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001C /* InviteManager.swift */; };
+		100000000000000000000023 /* InviteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000023 /* InviteCoordinator.swift */; };
+		100000000000000000000024 /* TorWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000024 /* TorWaitingViewController.swift */; };
+		100000000000000000000025 /* CapacityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000025 /* CapacityMonitor.swift */; };
+		100000000000000000000026 /* SecureLogBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000026 /* SecureLogBuffer.swift */; };
+		100000000000000000000027 /* RoomSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000027 /* RoomSettingsViewController.swift */; };
+		10000000000000000000002A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002A /* SettingsViewController.swift */; };
+		10000000000000000000002C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002C /* LaunchScreen.storyboard */; };
+		10000000000000000000002D /* PINPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002D /* PINPadViewController.swift */; };
+		10000000000000000000002E /* AppLockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002E /* AppLockManager.swift */; };
+		10000000000000000000002F /* AppLockSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002F /* AppLockSettingsViewController.swift */; };
+		100000000000000000000030 /* TorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000030 /* TorSettingsViewController.swift */; };
+		23EE2989FF1B1957184E3924 /* NetworkResilienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF5035542C42F8FA85281C /* NetworkResilienceTests.swift */; };
+		3857E9279CAEEA401DE5E78B /* StateMachineAssertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7513E54994B0764C57A76D /* StateMachineAssertionTests.swift */; };
+		46A368C1D5E9715D8D2AD158 /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033EC82ACC4552885C70EFC7 /* SmokeTests.swift */; };
+		5E5BD29BBE6AEF674F80D430 /* Pods_SecretR00M.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C093FED28C33A79122DC875 /* Pods_SecretR00M.framework */; };
+		63BB66916BCAF505C962D23B /* TorManagerPodWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95032B95A813DBB5F30B161 /* TorManagerPodWrapper.swift */; };
+		844AD4C136D8CC6AF3A95F72 /* RoomLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9E11B0F12D6D502469B9B9 /* RoomLifecycleTests.swift */; };
+		90CC418DE58DD34FDD46C9D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B99E214701B95A8B4AC207 /* Foundation.framework */; };
+		94DA492B4CA77FF884096143 /* CoverTrafficManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E375FFD75DC642D9810B9 /* CoverTrafficManager.swift */; };
+		A6818EBEB3CFDAA80FBDEE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC683B2A4D701488B939122 /* Assets.xcassets */; };
+		B69A23AB63973A2E91AD9634 /* SecurityVerificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119F4F223FB9E6E552D229E /* SecurityVerificationTests.swift */; };
+		CB4B593545B397593E682C4F /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8AB9906F486763319E7D0 /* TestHelpers.swift */; };
+		D5943F64628912AD75A7576F /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15DB6D2B043869E5935FFFE /* CryptoTests.swift */; };
+		DBGTEST0000000000000001 /* TestModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBGTEST0000000000000101 /* TestModeManager.swift */; };
+		DBGTEST0000000000000002 /* TestClientSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBGTEST0000000000000102 /* TestClientSession.swift */; };
+		DBGTEST0000000000000003 /* TestDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBGTEST0000000000000103 /* TestDiagnosticsView.swift */; };
+		E8E0AC0DD8E953D41E553914 /* CryptoStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDAD9E35D308A8BCFB71159 /* CryptoStateMachineTests.swift */; };
+		EFC7DE421F1E45BD58212294 /* MockRoomSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F87827793F70E94D726E58 /* MockRoomSessionDelegate.swift */; };
+		F906B45D8E472C64AD1E01A9 /* MockWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3197DB2A678298239135D /* MockWebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD0737A58426D4F4426AFE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600000000000000000000001;
+			remoteInfo = SecretR00M;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033EC82ACC4552885C70EFC7 /* SmokeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
+		0B3B39D09E2B671940B9FD50 /* Pods-SecretR00M.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretR00M.release.xcconfig"; path = "Target Support Files/Pods-SecretR00M/Pods-SecretR00M.release.xcconfig"; sourceTree = "<group>"; };
+		0EA3197DB2A678298239135D /* MockWebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockWebSocket.swift; sourceTree = "<group>"; };
+		200000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* SecureBytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureBytes.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* KeyGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGeneration.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* KeyExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyExchange.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* MessageCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCrypto.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* NonceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonceTracker.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* Handshake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handshake.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		20000000000000000000000A /* MessageTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTransport.swift; sourceTree = "<group>"; };
+		20000000000000000000000B /* RoomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomState.swift; sourceTree = "<group>"; };
+		20000000000000000000000C /* RoomSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSession.swift; sourceTree = "<group>"; };
+		20000000000000000000000D /* SecurityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityMonitor.swift; sourceTree = "<group>"; };
+		20000000000000000000000E /* HighSecurityMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighSecurityMode.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* DeviceIntegrityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIntegrityChecker.swift; sourceTree = "<group>"; };
+		200000000000000000000010 /* PrivacyOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyOverlay.swift; sourceTree = "<group>"; };
+		200000000000000000000011 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		200000000000000000000012 /* QuickExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickExitButton.swift; sourceTree = "<group>"; };
+		200000000000000000000013 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		200000000000000000000014 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		200000000000000000000015 /* HostRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostRoomViewController.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000017 /* TorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorManager.swift; sourceTree = "<group>"; };
+		200000000000000000000019 /* WebSocketProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProtocol.swift; sourceTree = "<group>"; };
+		20000000000000000000001A /* TorStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorStatusView.swift; sourceTree = "<group>"; };
+		20000000000000000000001B /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		20000000000000000000001C /* InviteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteManager.swift; sourceTree = "<group>"; };
+		200000000000000000000023 /* InviteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCoordinator.swift; sourceTree = "<group>"; };
+		200000000000000000000024 /* TorWaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorWaitingViewController.swift; sourceTree = "<group>"; };
+		200000000000000000000025 /* CapacityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityMonitor.swift; sourceTree = "<group>"; };
+		200000000000000000000026 /* SecureLogBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureLogBuffer.swift; sourceTree = "<group>"; };
+		200000000000000000000027 /* RoomSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSettingsViewController.swift; sourceTree = "<group>"; };
+		20000000000000000000002A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		20000000000000000000002C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20000000000000000000002D /* PINPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINPadViewController.swift; sourceTree = "<group>"; };
+		20000000000000000000002E /* AppLockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockManager.swift; sourceTree = "<group>"; };
+		20000000000000000000002F /* AppLockSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockSettingsViewController.swift; sourceTree = "<group>"; };
+		200000000000000000000030 /* TorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorSettingsViewController.swift; sourceTree = "<group>"; };
+		24D085C3AE72AB13A0CDC160 /* SecretR00MTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretR00MTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C18210CD0BC92A5E9C0F38B /* UIStateInteractionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIStateInteractionTests.swift; sourceTree = "<group>"; };
+		2F9E11B0F12D6D502469B9B9 /* RoomLifecycleTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoomLifecycleTests.swift; sourceTree = "<group>"; };
+		300000000000000000000001 /* SecretR00M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretR00M.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8B76B544DA496C4998030E /* NetworkSecurityValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkSecurityValidator.swift; sourceTree = "<group>"; };
+		5AC683B2A4D701488B939122 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SecretR00M/Assets.xcassets; sourceTree = "<group>"; };
+		665E375FFD75DC642D9810B9 /* CoverTrafficManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoverTrafficManager.swift; sourceTree = "<group>"; };
+		77BF5035542C42F8FA85281C /* NetworkResilienceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkResilienceTests.swift; sourceTree = "<group>"; };
+		8B21F01F90D0FCE7EA0D4237 /* Pods-SecretR00M.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretR00M.debug.xcconfig"; path = "Target Support Files/Pods-SecretR00M/Pods-SecretR00M.debug.xcconfig"; sourceTree = "<group>"; };
+		8C093FED28C33A79122DC875 /* Pods_SecretR00M.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretR00M.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDAD9E35D308A8BCFB71159 /* CryptoStateMachineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CryptoStateMachineTests.swift; sourceTree = "<group>"; };
+		9E7513E54994B0764C57A76D /* StateMachineAssertionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateMachineAssertionTests.swift; sourceTree = "<group>"; };
+		A5C8AB9906F486763319E7D0 /* TestHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		A6F87827793F70E94D726E58 /* MockRoomSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MockRoomSessionDelegate.swift; sourceTree = "<group>"; };
+		B95032B95A813DBB5F30B161 /* TorManagerPodWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TorManagerPodWrapper.swift; sourceTree = "<group>"; };
+		DBGTEST0000000000000101 /* TestModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModeManager.swift; sourceTree = "<group>"; };
+		DBGTEST0000000000000102 /* TestClientSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClientSession.swift; sourceTree = "<group>"; };
+		DBGTEST0000000000000103 /* TestDiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDiagnosticsView.swift; sourceTree = "<group>"; };
+		E119F4F223FB9E6E552D229E /* SecurityVerificationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecurityVerificationTests.swift; sourceTree = "<group>"; };
+		E9B99E214701B95A8B4AC207 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F15DB6D2B043869E5935FFFE /* CryptoTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5BD29BBE6AEF674F80D430 /* Pods_SecretR00M.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A8924F86E1D64D0CE82858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90CC418DE58DD34FDD46C9D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A92BB3FCF1CC0D6C54643FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B21F01F90D0FCE7EA0D4237 /* Pods-SecretR00M.debug.xcconfig */,
+				0B3B39D09E2B671940B9FD50 /* Pods-SecretR00M.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1015786F61D2365C46B6C886 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA3197DB2A678298239135D /* MockWebSocket.swift */,
+				A6F87827793F70E94D726E58 /* MockRoomSessionDelegate.swift */,
+				A5C8AB9906F486763319E7D0 /* TestHelpers.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		500000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000002 /* SecretR00M */,
+				500000000000000000000003 /* Products */,
+				5AC683B2A4D701488B939122 /* Assets.xcassets */,
+				9B457A7940D7D717EC5CD374 /* Frameworks */,
+				E9BECB29D77175E9A2797F86 /* SecretR00MTests */,
+				0A92BB3FCF1CC0D6C54643FB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		500000000000000000000002 /* SecretR00M */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000004 /* App */,
+				50000000000000000000000C /* Coordination */,
+				500000000000000000000005 /* Crypto */,
+				DBGTEST000000000000000D /* Debug */,
+				500000000000000000000006 /* Network */,
+				500000000000000000000007 /* Session */,
+				500000000000000000000008 /* Security */,
+				500000000000000000000009 /* UI */,
+				50000000000000000000000B /* Authentication */,
+				200000000000000000000016 /* Info.plist */,
+				20000000000000000000002C /* LaunchScreen.storyboard */,
+			);
+			path = SecretR00M;
+			sourceTree = "<group>";
+		};
+		500000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300000000000000000000001 /* SecretR00M.app */,
+				24D085C3AE72AB13A0CDC160 /* SecretR00MTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		500000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* AppDelegate.swift */,
+				200000000000000000000002 /* SceneDelegate.swift */,
+				20000000000000000000001B /* DeepLinkHandler.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		500000000000000000000005 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000003 /* SecureBytes.swift */,
+				200000000000000000000004 /* KeyGeneration.swift */,
+				200000000000000000000005 /* KeyExchange.swift */,
+				200000000000000000000006 /* MessageCrypto.swift */,
+				200000000000000000000007 /* NonceTracker.swift */,
+				200000000000000000000008 /* Handshake.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		500000000000000000000006 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000009 /* WebSocketManager.swift */,
+				20000000000000000000000A /* MessageTransport.swift */,
+				20000000000000000000001C /* InviteManager.swift */,
+				50000000000000000000000A /* Tor */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		500000000000000000000007 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000B /* RoomState.swift */,
+				20000000000000000000000C /* RoomSession.swift */,
+				200000000000000000000025 /* CapacityMonitor.swift */,
+				200000000000000000000026 /* SecureLogBuffer.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		500000000000000000000008 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000D /* SecurityMonitor.swift */,
+				20000000000000000000000E /* HighSecurityMode.swift */,
+				20000000000000000000000F /* DeviceIntegrityChecker.swift */,
+				665E375FFD75DC642D9810B9 /* CoverTrafficManager.swift */,
+				3C8B76B544DA496C4998030E /* NetworkSecurityValidator.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		500000000000000000000009 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000010 /* PrivacyOverlay.swift */,
+				200000000000000000000011 /* MessageCell.swift */,
+				200000000000000000000012 /* QuickExitButton.swift */,
+				200000000000000000000013 /* RoomViewController.swift */,
+				200000000000000000000014 /* HomeViewController.swift */,
+				200000000000000000000015 /* HostRoomViewController.swift */,
+				200000000000000000000027 /* RoomSettingsViewController.swift */,
+				20000000000000000000001A /* TorStatusView.swift */,
+				200000000000000000000024 /* TorWaitingViewController.swift */,
+				20000000000000000000002A /* SettingsViewController.swift */,
+				200000000000000000000030 /* TorSettingsViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000A /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000017 /* TorManager.swift */,
+				200000000000000000000019 /* WebSocketProtocol.swift */,
+				B95032B95A813DBB5F30B161 /* TorManagerPodWrapper.swift */,
+			);
+			path = Tor;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000002D /* PINPadViewController.swift */,
+				20000000000000000000002E /* AppLockManager.swift */,
+				20000000000000000000002F /* AppLockSettingsViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		50000000000000000000000C /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000023 /* InviteCoordinator.swift */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		5C3BB1B548A7A9A798AF1703 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E9B99E214701B95A8B4AC207 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9B457A7940D7D717EC5CD374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BB1B548A7A9A798AF1703 /* iOS */,
+				8C093FED28C33A79122DC875 /* Pods_SecretR00M.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBGTEST000000000000000D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				DBGTEST0000000000000101 /* TestModeManager.swift */,
+				DBGTEST0000000000000102 /* TestClientSession.swift */,
+				DBGTEST0000000000000103 /* TestDiagnosticsView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		E9BECB29D77175E9A2797F86 /* SecretR00MTests */ = {
+			isa = PBXGroup;
+			children = (
+				1015786F61D2365C46B6C886 /* Mocks */,
+				F15DB6D2B043869E5935FFFE /* CryptoTests.swift */,
+				E119F4F223FB9E6E552D229E /* SecurityVerificationTests.swift */,
+				2F9E11B0F12D6D502469B9B9 /* RoomLifecycleTests.swift */,
+				77BF5035542C42F8FA85281C /* NetworkResilienceTests.swift */,
+				8EDAD9E35D308A8BCFB71159 /* CryptoStateMachineTests.swift */,
+				2C18210CD0BC92A5E9C0F38B /* UIStateInteractionTests.swift */,
+				033EC82ACC4552885C70EFC7 /* SmokeTests.swift */,
+				9E7513E54994B0764C57A76D /* StateMachineAssertionTests.swift */,
+			);
+			path = SecretR00MTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		600000000000000000000001 /* SecretR00M */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700000000000000000000001 /* Build configuration list for PBXNativeTarget "SecretR00M" */;
+			buildPhases = (
+				4B55C732782C642CCA117C93 /* [CP] Check Pods Manifest.lock */,
+				800000000000000000000001 /* Sources */,
+				400000000000000000000001 /* Frameworks */,
+				900000000000000000000001 /* Resources */,
+				5F657BE7041CF2EA3447BE23 /* [CP] Embed Pods Frameworks */,
+				7C79D9B1AF14AB6E83990C8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretR00M;
+			productName = SecretR00M;
+			productReference = 300000000000000000000001 /* SecretR00M.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A3A6E84989FF59713F90B1F /* SecretR00MTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65D6221B661B11CFA5CD4DC /* Build configuration list for PBXNativeTarget "SecretR00MTests" */;
+			buildPhases = (
+				B0242C264159D1D605D92BD7 /* Sources */,
+				80A8924F86E1D64D0CE82858 /* Frameworks */,
+				73DE7A18CC9286218636710A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				237835E128EEC9DEBD7F866A /* PBXTargetDependency */,
+			);
+			name = SecretR00MTests;
+			productName = SecretR00MTests;
+			productReference = 24D085C3AE72AB13A0CDC160 /* SecretR00MTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					600000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B00000000000000000000001 /* Build configuration list for PBXProject "SecretR00M" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 500000000000000000000001;
+			productRefGroup = 500000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				600000000000000000000001 /* SecretR00M */,
+				6A3A6E84989FF59713F90B1F /* SecretR00MTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73DE7A18CC9286218636710A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6818EBEB3CFDAA80FBDEE9A /* Assets.xcassets in Resources */,
+				10000000000000000000002C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B55C732782C642CCA117C93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretR00M-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F657BE7041CF2EA3447BE23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C79D9B1AF14AB6E83990C8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecretR00M/Pods-SecretR00M-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* AppDelegate.swift in Sources */,
+				100000000000000000000002 /* SceneDelegate.swift in Sources */,
+				100000000000000000000003 /* SecureBytes.swift in Sources */,
+				100000000000000000000004 /* KeyGeneration.swift in Sources */,
+				100000000000000000000005 /* KeyExchange.swift in Sources */,
+				100000000000000000000006 /* MessageCrypto.swift in Sources */,
+				100000000000000000000007 /* NonceTracker.swift in Sources */,
+				100000000000000000000008 /* Handshake.swift in Sources */,
+				100000000000000000000009 /* WebSocketManager.swift in Sources */,
+				10000000000000000000000A /* MessageTransport.swift in Sources */,
+				10000000000000000000000B /* RoomState.swift in Sources */,
+				10000000000000000000000C /* RoomSession.swift in Sources */,
+				10000000000000000000000D /* SecurityMonitor.swift in Sources */,
+				10000000000000000000000E /* HighSecurityMode.swift in Sources */,
+				10000000000000000000000F /* DeviceIntegrityChecker.swift in Sources */,
+				100000000000000000000010 /* PrivacyOverlay.swift in Sources */,
+				100000000000000000000011 /* MessageCell.swift in Sources */,
+				100000000000000000000012 /* QuickExitButton.swift in Sources */,
+				100000000000000000000013 /* RoomViewController.swift in Sources */,
+				100000000000000000000014 /* HomeViewController.swift in Sources */,
+				100000000000000000000015 /* HostRoomViewController.swift in Sources */,
+				100000000000000000000027 /* RoomSettingsViewController.swift in Sources */,
+				100000000000000000000016 /* TorManager.swift in Sources */,
+				100000000000000000000018 /* WebSocketProtocol.swift in Sources */,
+				100000000000000000000019 /* TorStatusView.swift in Sources */,
+				63BB66916BCAF505C962D23B /* TorManagerPodWrapper.swift in Sources */,
+				94DA492B4CA77FF884096143 /* CoverTrafficManager.swift in Sources */,
+				0CA9BC044EC2AFBA30CC11E8 /* NetworkSecurityValidator.swift in Sources */,
+				10000000000000000000001B /* DeepLinkHandler.swift in Sources */,
+				10000000000000000000001C /* InviteManager.swift in Sources */,
+				100000000000000000000023 /* InviteCoordinator.swift in Sources */,
+				100000000000000000000024 /* TorWaitingViewController.swift in Sources */,
+				100000000000000000000025 /* CapacityMonitor.swift in Sources */,
+				100000000000000000000026 /* SecureLogBuffer.swift in Sources */,
+				10000000000000000000002A /* SettingsViewController.swift in Sources */,
+				100000000000000000000030 /* TorSettingsViewController.swift in Sources */,
+				10000000000000000000002D /* PINPadViewController.swift in Sources */,
+				10000000000000000000002E /* AppLockManager.swift in Sources */,
+				10000000000000000000002F /* AppLockSettingsViewController.swift in Sources */,
+				DBGTEST0000000000000001 /* TestModeManager.swift in Sources */,
+				DBGTEST0000000000000002 /* TestClientSession.swift in Sources */,
+				DBGTEST0000000000000003 /* TestDiagnosticsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0242C264159D1D605D92BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5943F64628912AD75A7576F /* CryptoTests.swift in Sources */,
+				B69A23AB63973A2E91AD9634 /* SecurityVerificationTests.swift in Sources */,
+				844AD4C136D8CC6AF3A95F72 /* RoomLifecycleTests.swift in Sources */,
+				23EE2989FF1B1957184E3924 /* NetworkResilienceTests.swift in Sources */,
+				E8E0AC0DD8E953D41E553914 /* CryptoStateMachineTests.swift in Sources */,
+				005743970B9A27EB86D3F0EF /* UIStateInteractionTests.swift in Sources */,
+				46A368C1D5E9715D8D2AD158 /* SmokeTests.swift in Sources */,
+				3857E9279CAEEA401DE5E78B /* StateMachineAssertionTests.swift in Sources */,
+				F906B45D8E472C64AD1E01A9 /* MockWebSocket.swift in Sources */,
+				EFC7DE421F1E45BD58212294 /* MockRoomSessionDelegate.swift in Sources */,
+				CB4B593545B397593E682C4F /* TestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		237835E128EEC9DEBD7F866A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SecretR00M;
+			target = 600000000000000000000001 /* SecretR00M */;
+			targetProxy = BD0737A58426D4F4426AFE67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B21F01F90D0FCE7EA0D4237 /* Pods-SecretR00M.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L63Z9DK375;
+				ENABLE_DEBUG_DYLIB = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecretR00M/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ephemeral.rooms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3B39D09E2B671940B9FD50 /* Pods-SecretR00M.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L63Z9DK375;
+				ENABLE_DEBUG_DYLIB = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecretR00M/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ephemeral.rooms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D8DC3718FC9639F71F3B461F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L63Z9DK375;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ephemeral.rooms.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretR00M.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecretR00M";
+			};
+			name = Debug;
+		};
+		FAAF813827F8B16635C3CD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L63Z9DK375;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ephemeral.rooms.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretR00M.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecretR00M";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700000000000000000000001 /* Build configuration list for PBXNativeTarget "SecretR00M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000003 /* Debug */,
+				C00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00000000000000000000001 /* Build configuration list for PBXProject "SecretR00M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000001 /* Debug */,
+				C00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65D6221B661B11CFA5CD4DC /* Build configuration list for PBXNativeTarget "SecretR00MTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAF813827F8B16635C3CD22 /* Release */,
+				D8DC3718FC9639F71F3B461F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}
